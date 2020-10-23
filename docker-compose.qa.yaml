@@ -1,0 +1,7 @@
+version: "3.7"
+services:
+  indexer:
+    environment:
+      CLAIR_CONF: "/src/clair/local-dev/clair/config.qa.yaml"
+      REPO_TO_CPE_URL: "http://localhost:8888/repo-2-cpe/repository-to-cpe.json"
+      CONTAINER_API_URL: "http://localhost:8888/pyxis/"
